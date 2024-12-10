@@ -1,0 +1,34 @@
+2024-11-12 10:08:43 warning: file_put_contents(C:\xampp\htdocs\cakephp_project\config\Migrations\schema-dump-default.lock): Failed to open stream: No such file or directory
+Trace:
+C:\xampp\htdocs\cakephp_project\vendor\cakephp\migrations\src\Command\DumpCommand.php C:\xampp\htdocs\cakephp_project\vendor\cakephp\migrations\src\Command\DumpCommand.php, line 139
+Migrations\Command\DumpCommand->execute() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 204
+Cake\Console\BaseCommand->run() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 296
+Cake\Console\BaseCommand->executeCommand() C:\xampp\htdocs\cakephp_project\vendor\cakephp\migrations\src\Command\MigrateCommand.php, line 181
+Migrations\Command\MigrateCommand->executeMigrations() C:\xampp\htdocs\cakephp_project\vendor\cakephp\migrations\src\Command\MigrateCommand.php, line 107
+Migrations\Command\MigrateCommand->execute() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 204
+Cake\Console\BaseCommand->run() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 330
+Cake\Console\CommandRunner->runCommand() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 168
+Cake\Console\CommandRunner->run() C:\xampp\htdocs\cakephp_project\bin\cake.php, line 10
+[main]
+
+2024-11-12 15:10:13 warning: Undefined variable $routes
+Trace:
+Cake\Http\BaseApplication->{closure}() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php, line 941
+Cake\Routing\RouteBuilder->scope() C:\xampp\htdocs\cakephp_project\config\routes.php, line 52
+Cake\Http\BaseApplication->{closure}() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 219
+Cake\Http\BaseApplication->routes() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 373
+Cake\Console\CommandRunner->loadRoutes() C:\xampp\htdocs\cakephp_project\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 151
+Cake\Console\CommandRunner->run() C:\xampp\htdocs\cakephp_project\bin\cake.php, line 10
+[main]
+
+2024-11-12 15:10:13 error: [Error] Call to a member function connect() on null in C:\xampp\htdocs\cakephp_project\config\routes.php on line 79
+Stack Trace:
+- CORE\src\Routing\RouteBuilder.php:941
+- ROOT\config\routes.php:52
+- CORE\src\Http\BaseApplication.php:219
+- CORE\src\Console\CommandRunner.php:373
+- CORE\src\Console\CommandRunner.php:151
+- ROOT\bin\cake.php:10
+- [main]:
+
+2024-12-03 16:32:22 warning: The connection is going to be closed but there is an active transaction.
